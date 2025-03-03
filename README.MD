@@ -1,7 +1,7 @@
 # Character☆Action
 <!--gold sponsors start-->
 <p align="center">
-<img width="256px" src="https://github.com/3035936740/Character-Action/blob/main/favicon.png">
+<img width="96px" src="https://github.com/3035936740/Character-Action/blob/main/favicon.png">
 </p>
 <!--gold sponsors end-->
 这个项目是用来控制角色的,可以做什么呢试试就知道啦(
