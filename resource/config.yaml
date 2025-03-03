@@ -1,0 +1,76 @@
+server: # 服务器设置
+  host: "0.0.0.0" # 服务器host
+  port: 8080 # 服务器端口
+  timeout: 30 # 服务器超时时间
+
+window:
+  hidden-console: 0
+  title: "tomato"
+  width: 640 # 宽度
+  height: 480 # 高度
+  fps: 5 # 0为不限制帧率
+  background: "#0000FF" # 可以填写RGB(例如: #1f1e33),或者RGBA("例如: #61661658") 也可以填写图片的路径,例如: bg/mustard_mountain_3.png
+  bgm:
+    enable: 0 # 是否开启背景音乐
+    loop-begin: 6780 # 循环开始时间(毫秒)
+    loop-end: 57190 # 循环结束时间(毫秒)
+    audio: "resources/audio/green_greens.ogg" # 背景音乐路径
+
+bubble:
+  bg-color: "#FFFFFF"
+  border-color: "#000000"
+  border-size: 5.0
+  max-width: 400.0 # 最大宽度
+  direction: 1 # 气泡发出方向(0是左,1是右,其他未实现)
+  default-text: "你好啊" # 默认显示文本(空则默认不显示)
+  emit: # 气泡发出
+    tail-start: 0.12 # 末端起始百分比
+    tail-end: 0.3 # 末端结束百分比
+    head-add-pos:
+      x: 15.0 # 发出位置x偏移值
+      y: 65.0 # 发出位置y偏移值
+  position: # 发送位置
+    x: 475.0
+    y: 370.0
+  padding:
+    top: 10
+    bottom: 10
+    left: 10
+    right: 10
+  font:
+    path: "resources/fonts/SourceHanSansCNBold.otf" # 设置字体
+    color: "#000000" # 设置颜色
+    size: 20 # 设置字体
+    line-spacing: 1.25 # 行间距
+    max-line: 6 # 最大行数
+    style:
+      bold: 0 # 是否加粗
+      italic: 0 # 是否斜体
+      underlined: 0 # 是否是下划线
+      strike-through: 0 # 是否是删除线
+
+character:
+  position:
+    x: 630.0
+    y: 290.0
+  scale:
+    x: -1.0
+    y: 1.0
+  moods:
+    default: "normal" # 默认心情
+    static: # 静态图
+      angry: "resources/moods/angry.png"
+      happy: "resources/moods/happy.png"
+      fear: "resources/moods/fear.png"
+      confuse: "resources/moods/confuse.png"
+      normal: "resources/moods/normal.png"
+      speechless: "resources/moods/speechless.png"
+      surprise: "resources/moods/surprise.png"
+      sad: "resources/moods/sad.png"
+      scream: "resources/moods/scream.png"
+    animation: # 动画图
+      shy:
+        delay: 200 # 动画轮播延迟为多少ms
+        images:
+          - "resources/moods/shy1.png"
+          - "resources/moods/shy2.png"
